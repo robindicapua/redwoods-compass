@@ -4,6 +4,18 @@ A plain log of changes made to any JSON file in the project.
 
 ---
 
+**Date:** 2026-03-28  
+**File:** `src/redwoods_compass_questions_v0.6.json`  
+**Change:** `Infrastructure` → Added new question: "Does the design system fully support the primary code language(s) used by product teams?"
+
+---
+
+**Date:** 2026-03-28  
+**File:** `src/redwoods_compass_questions_v0.6.json`  
+**Change:** `Infrastructure` → Removed 9 questions (lines 383-454 in previous version) regarding communications, design tooling, and engineering tooling to effectively 'comment them out'.
+
+---
+
 **Date:** 2026-03-27  
 **File:** `src/redwoods_compass_questions_v0.6.json`  
 **Change:** `People` → Replaced 1 generic split-time question (`id: people_split_time`, "Do most teammates at your organization split time on multiple teams?") and its 2 conditional follow-ups with 2 separate question trees differentiated by role:  
@@ -43,6 +55,12 @@ Net change: +3 questions (3 → 6) in the `People` category's `Organizational Re
 - **Base** (`id: infra_multiple_platforms`): "Does your organisation build on multiple platforms?"  
 - **YES follow-up**: "Are each of those platforms building in alignment with the same design system?"  
 - **NO follow-up**: "Is your platform built using your design system?"
+
+---
+
+**Date:** 2026-03-28  
+**File:** `src/redwoods_compass_questions_v0.6.json`  
+**Change:** `Infrastructure` → `Question` replaced ("Is there a standard communication platform used at the organization?") with "Does the design system fully support the primary code language(s) used by product teams?". Subcategory also updated to "Is there a defined tech stack and/or set of frameworks?".
 
 ---
 

@@ -373,80 +373,8 @@
         "weight": 1
       },
       {
-        "Subcategory": "Is there a defined communications platform?",
-        "Question": "Is there a standard communication platform used at the organization?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Is there a defined communications platform?",
-        "Question": "Are there standardized incremental communications (like newsletters, town halls, all-hands meetings, etc)?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same design tooling?",
-        "Question": "Is all design work done in the same tool?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same design tooling?",
-        "Question": "Is all prototyping work done in the same tool?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same design tooling?",
-        "Question": "Is handoff done in the same tool?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same design tooling?",
-        "Question": "Are design assets distributed through the same tool?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same engineering tooling?",
+        "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
         "Question": "Does the design system fully support the primary code language(s) used by product teams?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same engineering tooling?",
-        "Question": "Is code stored in the same place across the org?",
-        "Description": "",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same engineering tooling?",
-        "Question": "Are there established approaches across the organization when it comes to page performance and QA testing?",
-        "Description": "Some organizations have a unilateral process, some have certain processes based on business unit. This question seeks to establish if there are processes at all, or if there isn't",
-        "Infotip": "",
-        "Answer": "",
-        "weight": 1
-      },
-      {
-        "Subcategory": "Are all teams on the same engineering tooling?",
-        "Question": "Does deployment follow the same progress across the org?",
         "Description": "",
         "Infotip": "",
         "Answer": "",

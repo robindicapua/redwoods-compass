@@ -332,12 +332,37 @@
     "CategoryDescription": "Measures the consistency and stability of the tech stack, tooling, and communication platforms.",
     "Questions": [
       {
+        "id": "infra_multiple_platforms",
         "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
-        "Question": "Is the organization (or product) on a single tech stack?",
+        "Question": "Does your organisation build on multiple platforms?",
         "Description": "",
         "Infotip": "",
         "Answer": "",
         "weight": 1
+      },
+      {
+        "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
+        "Question": "Are each of those platforms building in alignment with the same design system?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1,
+        "showIf": {
+          "questionId": "infra_multiple_platforms",
+          "equals": "Yes"
+        }
+      },
+      {
+        "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
+        "Question": "Is your platform built using your design system?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1,
+        "showIf": {
+          "questionId": "infra_multiple_platforms",
+          "equals": "No"
+        }
       },
       {
         "Subcategory": "Is there a defined tech stack and/or set of frameworks?",

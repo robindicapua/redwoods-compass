@@ -37,6 +37,15 @@ Net change: +3 questions (3 → 6) in the `People` category's `Organizational Re
 
 ---
 
+**Date:** 2026-03-28  
+**File:** `src/redwoods_compass_questions_v0.6.json`  
+**Change:** `Infrastructure` → Replaced 1 generic question ("Is the organization (or product) on a single tech stack?") with a conditional tree:  
+- **Base** (`id: infra_multiple_platforms`): "Does your organisation build on multiple platforms?"  
+- **YES follow-up**: "Are each of those platforms building in alignment with the same design system?"  
+- **NO follow-up**: "Is your platform built using your design system?"
+
+---
+
 <!-- TEMPLATE (copy & paste for each change):
 
 **Date:** YYYY-MM-DD  

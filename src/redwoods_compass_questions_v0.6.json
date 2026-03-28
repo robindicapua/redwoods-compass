@@ -1,0 +1,432 @@
+[
+  {
+    "Category": "Authority",
+    "CategoryDescription": "Measures leadership support, decision-making autonomy, and the mandate to enforce standards.",
+    "Questions": [
+      {
+        "Subcategory": "Executive support for decisions through mandates, approval, etc.",
+        "Question": "Is there a design critique culture in the organization?",
+        "Description": "What's being measured here is a gauge the willingness to share, collaborate, and have hard-discussions",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Executive support for decisions through mandates, approval, etc.",
+        "Question": "Is there leadership support for the design system?",
+        "Description": "Support in this context is not necessarily financial, but more in decision-making power and trust to act as subject-matter-experts",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Permission to make decisions on behalf of the org",
+        "Question": "Does the design system team have the autonomy to make decisions for other teams without requiring case-by-case approval?",
+        "Description": "Decisions in this case refer to system-level changes, additions, or modifications (ie. not product-level features).",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Category": "Alignment",
+    "CategoryDescription": "Measures the shared understanding of vision, strategy, and values across the organization.",
+    "Questions": [
+      {
+        "Subcategory": "Alignment on the 'why' consumers should use the design system (e.g., the individual contributor value proposition)",
+        "Question": "Is there a defined design strategy in the company?",
+        "Description": "Does your organization have a cohesive plan on how UX work is done as well as what work is planned.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Alignment on the 'why' consumers should use the design system (e.g., the individual contributor value proposition)",
+        "Question": "Do designers at your organisation have deep, T-shaped specialisms (e.g., UX, UI, research, content, information architecture)?",
+        "Description": "Some organizations focus on hiring specialists, some generalists",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Alignment on the 'why' consumers should use the design system (e.g., the individual contributor value proposition)",
+        "Question": "Does the org have an established digital governance framework?",
+        "Description": "Digital governance often takes shape as an alignment team, standards group, design review requirement, or robust QA process, but can come in many forms",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Alignment on the 'why' for the org (vision, charter, future state, needs of the org and/or products)",
+        "Question": "Is there a specific goal or mission statement for the design system?",
+        "Description": "Does your system have a defined purpose or charter to help frame what success looks like overall",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Alignment on the 'why' for the people doing the work (internal-why)",
+        "Question": "Does your system have a specific set of team-level goals or missions that might not directly relate to the org-level mission statement?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Alignment on the 'why' for the people doing the work (internal-why)",
+        "Question": "Is there a clear set of values for the design system, specifically?",
+        "Description": "Values, in this case, help to inform decision making; e.g. if the system team values accessibility over speed, they may change a priority, etc",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Alignment on the 'why' for the people doing the work (internal-why)",
+        "Question": "Is there a clear set of criteria for success for the design system?",
+        "Description": "Sometimes this takes the shape of KPIs, quarterly goals, or annual initiatives, etc",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Category": "Resource Lifecycle",
+    "CategoryDescription": "Measures how resources (code, design, docs) are born, maintained, and retired. It focuses on the operational reality of the system's assets.",
+    "Questions": [
+      {
+        "Subcategory": "Resource Creation & Parity",
+        "Question": "Does the 'Definition of Done' for a new resource require parity across design, code, and documentation?",
+        "Description": "Select 'Yes' only if a component cannot be officially released until its documentation is also ready.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Resource Creation & Parity",
+        "Question": "Is there a documented process for intake that allows non-maintainers to propose or contribute changes?",
+        "Description": "This could include intake forms, contribution guidelines, or open office hours for proposals.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Resource Maintenance",
+        "Question": "Are documentation updates tied to the release cadence of the code/design libraries?",
+        "Description": "Select 'Yes' if your documentation site automatically builds or versions alongside your code packages.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Resource Maintenance",
+        "Question": "Is there a clear system for labeling updates so consumers know if a change will break their work?",
+        "Description": "Often handled via Semantic Versioning (Major/Minor/Patch), but any clear signaling system counts.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Deprecation or EOL processes",
+        "Question": "When a resource is deprecated, is its status reflected simultaneously in the code and the documentation site?",
+        "Description": "This ensures that a resource is marked as deprecated in the documentation the moment it is deprecated in the code.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Deprecation or EOL processes",
+        "Question": "Do you provide migration guides or automated tools to help teams move off deprecated resources?",
+        "Description": "Examples include written guides, 'codemods', or hands-on support.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Category": "People",
+    "CategoryDescription": "Measures team composition, resilience to organizational shifts, and capacity to scale.",
+    "Questions": [
+      {
+        "id": "people_makers_split_time",
+        "Subcategory": "Makers: Allocation & Resilience",
+        "Question": "Do the individuals maintaining or building the design system split their time across other non-system projects?",
+        "Description": "Measures stability of the system team. Splitting time often reduces resilience and slows system delivery.",
+        "Infotip": "Select 'Yes' if system team members context-switch between design system work and product team work.",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Makers: Allocation & Resilience",
+        "Question": "Is there a formal agreement or process defining how that split is managed?",
+        "Description": "Stability comes from predictable processes, even when allocation is partial.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1,
+        "showIf": {
+          "questionId": "people_makers_split_time",
+          "equals": "Yes"
+        }
+      },
+      {
+        "Subcategory": "Makers: Allocation & Resilience",
+        "Question": "Do these maintainers periodically rotate into product teams to build features?",
+        "Description": "Rotation can build consumer empathy and reduce the risk of the system becoming disconnected from real product needs.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1,
+        "showIf": {
+          "questionId": "people_makers_split_time",
+          "equals": "No"
+        }
+      },
+      {
+        "id": "people_consumers_split_time",
+        "Subcategory": "Consumers: Allocation & Resilience",
+        "Question": "Do the product designers and engineers (consumers) split their time across multiple products or teams simultaneously?",
+        "Description": "Measures how fragmented consumer attention is, which can affect adoption quality and feedback loops with the system team.",
+        "Infotip": "Select 'Yes' if product team members are shared across multiple products or squads at the same time.",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Consumers: Allocation & Resilience",
+        "Question": "Is there a formal resource planning process for this allocation?",
+        "Description": "Formal planning reduces ad-hoc context-switching and helps the system team anticipate consumer bandwidth.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1,
+        "showIf": {
+          "questionId": "people_consumers_split_time",
+          "equals": "Yes"
+        }
+      },
+      {
+        "Subcategory": "Consumers: Allocation & Resilience",
+        "Question": "Would the organization be open to a rotation program (e.g., embedding consumers into the system team)?",
+        "Description": "Rotation programs can improve system adoption, surface real consumer pain points, and strengthen alignment between system and product teams.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1,
+        "showIf": {
+          "questionId": "people_consumers_split_time",
+          "equals": "No"
+        }
+      },
+      {
+        "Subcategory": "Dedicated (full or partial) core team to work on the design system",
+        "Question": "Is there a group of individuals assigned to work on the design system, specifically?",
+        "Description": "'assigned' in this case means a team or set of individuals that are officially asked to work on the design system as a part their role or as their full focus and that work has someone managing it, etc. 'Assigned' in this context does NOT mean self-organized or side-of-desk system projects, nor efforts that are not-yet-official in terms of company acceptance.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Consumers (clear-ish list of who would use the thing you're making)",
+        "Question": "Is there a defined group of intended users for the design system?",
+        "Description": "This question is looking to analyze clarity of scope. Ie. 'everyone at our company' is not a 'defined group'",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Ability to do in house?",
+        "Question": "Do we have the teammates internally that can successfully build the design system?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Ability to do in house?",
+        "Question": "Can we supplement the core design system team with additional teammates from around the org?",
+        "Description": "Supplement, in this case, means contribute to or collaborate with the core design system team",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Ability to do in house?",
+        "Question": "If needed, can the design system team get help?",
+        "Description": "This can take place as dedicated resources, temporary project support from a colleague, or even hiring external contractors/an agency",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Ability to do in house?",
+        "Question": "Are there trainings and processes in place to onboard new users to the design system?",
+        "Description": "This is referring to onboarding to the design system resources, not the standard employee onboarding; this can take the shape of training documentation, demos, live recordings, etc",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Category": "Investment",
+    "CategoryDescription": "Measures the allocation of budget, headcount, and resources for training and long-term sustainability.",
+    "Questions": [
+      {
+        "Subcategory": "Monetary Investment: Headcount",
+        "Question": "Is there leadership approval/commitment for hiring additional teammates?",
+        "Description": "Hiring in this case could be net-new, or an internal transfer",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Long term funding",
+        "Question": "Has the organization made an official commitment to fund the ongoing maintenance and longevity of the design system?",
+        "Description": "Said differently, will the team that built the system be allocated to help fix bugs, build new features, and deliver quality-of-life enhancements beyond the initial release",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Monetary Investment: Tools",
+        "Question": "Is there a tooling budget for continuing current tools?",
+        "Description": "This refers to tools currently utilized by the system team",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Monetary Investment: Tools",
+        "Question": "If the team wanted to explore new or additional tooling, would they be able to?",
+        "Description": "Some teams have fixed annual tooling budgets, some are able to add or remove tools adhoc",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Monetary Investment: Training on courses, teachers, etc",
+        "Question": "Does the organization pay for individual trainings, courses, conferences?",
+        "Description": "Said differently, are there funds or time allowance for learning and development at the individual level?",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Monetary Investment: Training on courses, teachers, etc",
+        "Question": "Does the organization bring in external teachers/speakers/workshop hosts?",
+        "Description": "Said differently, are there funds or time allowance for learning and development at the team or group level?",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Time Investment: Training capacity, ability to spend time on learning and not delivery work",
+        "Question": "Does the org make space for learning and development in the average work day/week/cycle?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "Category": "Infrastructure",
+    "CategoryDescription": "Measures the consistency and stability of the tech stack, tooling, and communication platforms.",
+    "Questions": [
+      {
+        "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
+        "Question": "Is the organization (or product) on a single tech stack?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
+        "Question": "For your web applications are you using multiple frameworks?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Is there a defined communications platform?",
+        "Question": "Is there a standard communication platform used at the organization?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Is there a defined communications platform?",
+        "Question": "Are there standardized incremental communications (like newsletters, town halls, all-hands meetings, etc)?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same design tooling?",
+        "Question": "Is all design work done in the same tool?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same design tooling?",
+        "Question": "Is all prototyping work done in the same tool?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same design tooling?",
+        "Question": "Is handoff done in the same tool?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same design tooling?",
+        "Question": "Are design assets distributed through the same tool?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same engineering tooling?",
+        "Question": "Does the design system fully support the primary code language(s) used by product teams?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same engineering tooling?",
+        "Question": "Is code stored in the same place across the org?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same engineering tooling?",
+        "Question": "Are there established approaches across the organization when it comes to page performance and QA testing?",
+        "Description": "Some organizations have a unilateral process, some have certain processes based on business unit. This question seeks to establish if there are processes at all, or if there isn't",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same engineering tooling?",
+        "Question": "Does deployment follow the same progress across the org?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      }
+    ]
+  }
+]

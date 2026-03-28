@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Figma_Console__figma_get_file_data",
+      "Bash(curl -fsSL https://claude.ai/install.sh)",
+      "Bash(bash)",
+      "Bash(npm uninstall:*)",
+      "Bash(source ~/.zshrc)"
+    ]
+  }
+}

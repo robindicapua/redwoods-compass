@@ -1,0 +1,130 @@
+{
+    "color": {
+        "background": {
+            "canvas": {
+                "$value": "{color.neutral.100}",
+                "$type": "color",
+                "$description": "Default page background color"
+            },
+            "surface": {
+                "$value": "{color.neutral.0}",
+                "$type": "color",
+                "$description": "Surface background for sections and cards"
+            },
+            "surface-subtle": {
+                "$value": "{color.white.alpha-50}",
+                "$type": "color",
+                "$description": "Subtle surface background for highlighted blocks"
+            }
+        },
+        "text": {
+            "primary": {
+                "$value": "{color.neutral.800}",
+                "$type": "color",
+                "$description": "Primary body text and headings"
+            },
+            "secondary": {
+                "$value": "{color.neutral.700}",
+                "$type": "color",
+                "$description": "Secondary or supplemental text"
+            },
+            "muted": {
+                "$value": "{color.neutral.400}",
+                "$type": "color",
+                "$description": "Muted text or placeholders"
+            },
+            "inverse": {
+                "$value": "{color.neutral.0}",
+                "$type": "color",
+                "$description": "Text color on dark backgrounds"
+            },
+            "link": {
+                "$value": "{color.blue.500}",
+                "$type": "color",
+                "$description": "Standard link color"
+            }
+        },
+        "border": {
+            "divider": {
+                "$value": "{color.neutral.600}",
+                "$type": "color",
+                "$description": "Color for horizontal dividers and rules"
+            }
+        },
+        "action": {
+            "primary": {
+                "background": {
+                    "$value": "{color.blue.500}",
+                    "$type": "color",
+                    "$description": "Primary action button background"
+                },
+                "background-hover": {
+                    "$value": "{color.blue.500-alpha-90}",
+                    "$type": "color",
+                    "$description": "Primary action button background on hover"
+                }
+            },
+            "selection": {
+                "background": {
+                    "$value": "{color.neutral.200}",
+                    "$type": "color",
+                    "$description": "Text selection highlight color"
+                }
+            }
+        }
+    },
+    "typography": {
+        "family": {
+            "body": {
+                "$value": "{fontFamily.serif}",
+                "$type": "fontFamily"
+            },
+            "heading": {
+                "$value": "{fontFamily.serif}",
+                "$type": "fontFamily"
+            }
+        },
+        "weight": {
+            "body": {
+                "$value": "{fontWeight.regular}",
+                "$type": "fontWeight"
+            },
+            "heading": {
+                "$value": "{fontWeight.regular}",
+                "$type": "fontWeight"
+            }
+        },
+        "size": {
+            "body": {
+                "$value": "{fontSize.md}",
+                "$type": "fontSize"
+            },
+            "heading-1": {
+                "$value": "{fontSize.5xl}",
+                "$type": "fontSize"
+            },
+            "heading-2": {
+                "$value": "{fontSize.3xl}",
+                "$type": "fontSize"
+            },
+            "heading-3": {
+                "$value": "{fontSize.lg}",
+                "$type": "fontSize"
+            },
+            "nav": {
+                "$value": "{fontSize.nav}",
+                "$type": "fontSize"
+            }
+        },
+        "leading": {
+            "body": {
+                "$value": "{lineHeight.base}",
+                "$type": "lineHeight"
+            },
+            "heading": {
+                "$value": "{lineHeight.tight}",
+                "$type": "lineHeight"
+            }
+        }
+    }
+}

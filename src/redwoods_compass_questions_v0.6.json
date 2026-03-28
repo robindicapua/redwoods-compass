@@ -382,6 +382,14 @@
       },
       {
         "Subcategory": "Is there a defined communications platform?",
+        "Question": "Is there a standard practice for using a central communication platform at the organization?",
+        "Description": "Communication platforms in this context are chat tools like Slack and MS Teams, email tools like Outlook and other intracompany communication. Specifically we do not mean internal documentation like Sharepoint or Notion.",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Is there a defined communications platform?",
         "Question": "In addition to communication platforms does your organization or team send out regular company updates from leadership?",
         "Description": "Company updates can be town halls, newsletters, webinars, quarterly reports etc.",
         "Infotip": "",

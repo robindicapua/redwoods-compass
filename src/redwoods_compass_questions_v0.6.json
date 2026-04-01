@@ -405,12 +405,26 @@
         "weight": 1
       },
       {
+        "id": "infra_prototyping",
         "Subcategory": "Are all teams on the same design tooling?",
         "Question": "Is prototyping happening in your company?",
         "Description": "With prototyping we mean an artifact used to demonstrate interactivity and functionality to drive shared understanding",
         "Infotip": "",
         "Answer": "",
         "weight": 1
+      },
+      {
+        "Subcategory": "Are all teams on the same design tooling?",
+        "Question": "Does it happen in a code generating tool or static artifacts tool?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 0,
+        "type": "text",
+        "showIf": {
+          "questionId": "infra_prototyping",
+          "equals": "Yes"
+        }
       },
       {
         "Subcategory": "Are all teams on the same design tooling?",

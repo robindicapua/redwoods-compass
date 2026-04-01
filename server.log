@@ -76,3 +76,13 @@
 ::1 - - [28/Mar/2026 14:34:36] "GET /tokens.css HTTP/1.1" 200 -
 ::1 - - [28/Mar/2026 14:34:36] code 404, message File not found
 ::1 - - [28/Mar/2026 14:34:36] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [29/Mar/2026 15:29:44] "GET / HTTP/1.1" 304 -
+::1 - - [29/Mar/2026 15:29:45] "GET /tokens.css HTTP/1.1" 304 -
+::1 - - [29/Mar/2026 15:29:45] "GET /script.js HTTP/1.1" 304 -
+::1 - - [29/Mar/2026 15:29:45] "GET /src/redwoods_compass_questions_v0.6.json HTTP/1.1" 304 -
+::1 - - [29/Mar/2026 15:29:57] "GET / HTTP/1.1" 200 -
+::1 - - [29/Mar/2026 15:29:59] "GET /tokens.css HTTP/1.1" 200 -
+::1 - - [29/Mar/2026 15:29:59] "GET /script.js HTTP/1.1" 200 -
+::1 - - [29/Mar/2026 15:30:00] "GET /src/redwoods_compass_questions_v0.6.json HTTP/1.1" 200 -
+::1 - - [29/Mar/2026 15:30:00] code 404, message File not found
+::1 - - [29/Mar/2026 15:30:00] "GET /favicon.ico HTTP/1.1" 404 -

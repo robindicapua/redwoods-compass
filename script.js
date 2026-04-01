@@ -87,6 +87,7 @@ function parseQuestions(parsedData) {
                     categoryDescription: categoryDesc,
                     showIf: q.showIf,
                     weight: q.weight ?? 1,
+                    type: q.type || 'radio',
                 }));
 
                 questionArray.push(...categoryQuestions);
@@ -104,6 +105,7 @@ function parseQuestions(parsedData) {
             categoryDescription: q.CategoryDescription ?? '',
             showIf: q.showIf,
             weight: q.weight ?? 1,
+            type: q.type || 'radio',
         }));
     }
 
@@ -237,7 +239,7 @@ function updateCategoryCounters() {
 }
 
 function setAnswer(id, val) {
-    if (val === undefined) {
+    if (val === undefined || val === '') {
         delete answers[id];
     } else {
         answers[id] = val;
@@ -247,9 +249,14 @@ function setAnswer(id, val) {
     calculateProgress();
     updateCategoryCounters();
     
-    // Update DOM manually to avoid full re-render scroll jumps if render wasn't called
-    const radios = document.querySelectorAll(`input[name="q_${id}"]`);
+    // Update DOM manually to avoid full re-render scroll jumps if render wasnt called
+    const radios = document.querySelectorAll(`input[type="radio"][name="q_${id}"]`);
     radios.forEach(r => r.checked = (r.value === val));
+
+    const textInput = document.querySelector(`input[type="text"][data-id="${id}"]`);
+    if (textInput && textInput !== document.activeElement) {
+        textInput.value = (val === 'Skipped' || val === undefined) ? '' : val;
+    }
     
     const unskipBtn = document.querySelector(`.skip-btn[data-id="${id}"]`);
     if (unskipBtn) {
@@ -260,8 +267,12 @@ function setAnswer(id, val) {
     if (qItem) {
         if (val === 'Skipped') {
             qItem.classList.add('opacity-50');
+            if (textInput) textInput.disabled = true;
+            radios.forEach(r => r.disabled = true);
         } else {
             qItem.classList.remove('opacity-50');
+            if (textInput) textInput.disabled = false;
+            radios.forEach(r => r.disabled = false);
         }
     }
 }
@@ -371,14 +382,18 @@ function renderQuestionItem(q) {
             </div>
             ${q.description ? `<p class="mt-2 text-small italic text-muted">${escapeHtml(q.description)}</p>` : ''}
             <div class="mt-3 flex gap-6 flex-wrap items-center">
+                ${q.type === 'text' ? `
+                <input type="text" class="text-input p-2 border border-divider rounded bg-canvas flex-1 text-primary focus:outline-none focus:border-action" data-id="${q.id}" value="${escapeHtml(answer === 'Skipped' ? '' : (answer || ''))}" placeholder="Enter your answer" ${isSkipped ? 'disabled' : ''} />
+                ` : `
                 <label class="flex items-center gap-1 cursor-pointer">
-                    <input type="radio" class="radio-btn accent-[var(--color-action-primary-background)]" name="q_${q.id}" value="Yes" data-id="${q.id}" ${yesChecked} />
+                    <input type="radio" class="radio-btn accent-[var(--color-action-primary-background)]" name="q_${q.id}" value="Yes" data-id="${q.id}" ${yesChecked} ${isSkipped ? 'disabled' : ''} />
                     <span>Yes</span>
                 </label>
                 <label class="flex items-center gap-1 cursor-pointer">
-                    <input type="radio" class="radio-btn accent-[var(--color-action-primary-background)]" name="q_${q.id}" value="No" data-id="${q.id}" ${noChecked} />
+                    <input type="radio" class="radio-btn accent-[var(--color-action-primary-background)]" name="q_${q.id}" value="No" data-id="${q.id}" ${noChecked} ${isSkipped ? 'disabled' : ''} />
                     <span>No</span>
                 </label>
+                `}
                 <button class="skip-btn ml-auto text-small underline text-muted hover:text-link" data-id="${q.id}">
                     ${isSkipped ? 'Unskip' : 'Skip'}
                 </button>
@@ -480,6 +495,14 @@ function attachEventHandlers() {
             if (e.target.checked) {
                 setAnswer(e.target.dataset.id, e.target.value);
             }
+        });
+    });
+
+    // Text changes
+    const textInputs = categoriesContainer.querySelectorAll('.text-input');
+    textInputs.forEach(input => {
+        input.addEventListener('input', (e) => {
+            setAnswer(e.target.dataset.id, e.target.value);
         });
     });
 

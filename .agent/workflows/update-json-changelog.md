@@ -6,7 +6,10 @@ Every time any JSON file in this project is modified (e.g., `src/redwoods_compas
 
 ## Steps
 
-1. Make the change to the JSON file.
+1. Make the change to the JSON file (`src/redwoods_compass_questions*.json`).
+    - *Note:* `visualization.html` and `script.js` dynamically fetch questions directly from the `.json` file. Any changes to question text in the `.json` file will instantly become the new validation standard for CSV uploads in the visualizer. Therefore, there is no need to manually update `visualization.html` when altering questions.
+    - *Note:* Ensure that any changes to questions perfectly match how they are phrased in your source forms and resulting CSV exports (including exact capitalization). If they don't match exactly, the visualizer will flag uploaded CSVs as having unknown questions.
+    - **VERSION BUMP NOTE:** If you rename the JSON file to bump the version (e.g., from `_v0.6.json` to `_v1.0.json`), you MUST also globally find and replace references to the old filename in `script.js` and `visualization.html` so the application doesn't break.
 
 2. Check `docs/json-changelog.md` for an entry with today's date (**YYYY-MM-DD**).
 

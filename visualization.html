@@ -384,62 +384,19 @@
 </main>
 
 <script>
-// ── Authoritative question list (from redwoods_compass_questions_v0.6.json) ──
-// All questions across all categories, including conditional follow-ups.
-// Used to validate that an uploaded CSV belongs to this questionnaire version.
-const VALID_QUESTIONS = new Set([
-    // Authority
-    "Is there a design critique culture in the organization?",
-    "Is there leadership support for the design system?",
-    "Does the design system team have the autonomy to make decisions for other teams without requiring case-by-case approval?",
-    // Alignment
-    "Is there a defined design strategy in the company?",
-    "Do designers at your organisation have deep, T-shaped specialisms (e.g., UX, UI, research, content, information architecture)?",
-    "Does the org have an established digital governance framework?",
-    "Is there a specific goal or mission statement for the design system?",
-    "Does your system have a specific set of team-level goals or missions that might not directly relate to the org-level mission statement?",
-    "Is there a clear set of values for the design system, specifically?",
-    "Is there a clear set of criteria for success for the design system?",
-    // Resource Lifecycle
-    "Does the 'Definition of Done' for a new resource require parity across design, code, and documentation?",
-    "Is there a documented process for intake that allows non-maintainers to propose or contribute changes?",
-    "Are documentation updates tied to the release cadence of the code/design libraries?",
-    "Is there a clear system for labeling updates so consumers know if a change will break their work?",
-    "When a resource is deprecated, is its status reflected simultaneously in the code and the documentation site?",
-    "Do you provide migration guides or automated tools to help teams move off deprecated resources?",
-    // People
-    "Do the individuals maintaining or building the design system split their time across other non-system projects?",
-    "Is there a formal agreement or process defining how that split is managed?",
-    "Do these maintainers periodically rotate into product teams to build features?",
-    "Do the product designers and engineers (consumers) split their time across multiple products or teams simultaneously?",
-    "Is there a formal resource planning process for this allocation?",
-    "Would the organization be open to a rotation program (e.g., embedding consumers into the system team)?",
-    "Is there a group of individuals assigned to work on the design system, specifically?",
-    "Is there a defined group of intended users for the design system?",
-    "Do we have the teammates internally that can successfully build the design system?",
-    "Can we supplement the core design system team with additional teammates from around the org?",
-    "If needed, can the design system team get help?",
-    "Are there trainings and processes in place to onboard new users to the design system?",
-    // Investment
-    "Is there leadership approval/commitment for hiring additional teammates?",
-    "Has the organization made an official commitment to fund the ongoing maintenance and longevity of the design system?",
-    "Is there a tooling budget for continuing current tools?",
-    "If the team wanted to explore new or additional tooling, would they be able to?",
-    "Does the organization pay for individual trainings, courses, conferences?",
-    "Does the organization bring in external teachers/speakers/workshop hosts?",
-    "Does the org make space for learning and development in the average work day/week/cycle?",
-    // Infrastructure
-    "Does your organisation build on multiple platforms?",
-    "Are each of those platforms building in alignment with the same design system?",
-    "Is your platform built using your design system?",
-    "For your web applications are you using multiple frameworks?",
-    "Does the design system fully support the primary code language(s) used by product teams?",
-    "Is there a standard practice for using a central communication platform at the organization?",
-    "In addition to communication platforms does your organization or team send out regular company updates from leadership?",
-    "Are the designers using the same set of tools to do work?",
-    "Is prototyping happening in your company?",
-    "Are design resources distributed through the same tool?",
-]);
+let VALID_QUESTIONS = new Set();
+
+// Fetch the questions dynamically to ensure they stay up-to-date
+fetch('src/redwoods_compass_questions_v0.6.json')
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(category => {
+            if (category.Questions) {
+                category.Questions.forEach(q => VALID_QUESTIONS.add(q.Question));
+            }
+        });
+    })
+    .catch(e => console.error("Failed to load questions from JSON:", e));
 
 // ── Palette ────────────────────────────────────────────────────────
 const PALETTE = [

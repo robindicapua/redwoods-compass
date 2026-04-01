@@ -4,6 +4,13 @@ A plain log of changes made to any JSON file in the project.
 
 ---
 
+**Date:** 2026-04-01  
+**File:** `src/redwoods_compass_questions_v0.6.json`  
+**Change:** `Infrastructure` → Detailed description of changes:
+- Added new conditional follow-up question: "Does it happen in a code generating tool or static artifacts tool?" (under `infra_prototyping`).
+
+---
+
 **Date:** 2026-03-28  
 **File:** `src/redwoods_compass_questions_v0.6.json`  
 **Change:** `Infrastructure` → Detailed overhaul of category questions:

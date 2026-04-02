@@ -4,6 +4,22 @@ A plain log of changes made to any JSON file in the project.
 
 ---
 
+**Date:** 2026-04-02  
+**File:** `src/redwoods_compass_questions_v0.6.json`  
+**Change:** `Infrastructure` → Detailed description of changes:
+- Replaced question "Does the design system fully support the primary code language(s) used by product teams?" with two new questions:
+  - "Are you able to use the design system in all applications in your company?"
+  - "Is the design system compatible with the primary languages and frameworks teams use?"
+- Added two new questions under Subcategory "Distribution & Version Control":
+  - "Is the design system isolated in its own repo or colocated with the product?"
+  - "Do you use a tool like a package manager to distribute the design system?"
+- Added three new questions under Subcategory "Quality & Testing":
+  - "Are there quality standards for your application for things like performance and accessibility?"
+  - "Are there defined quality guidelines that your application is evaluated by?"
+  - "For QA testing, do teams rely on human testing, automated testing, or a combination of the two?"
+
+---
+
 **Date:** 2026-04-01  
 **File:** `src/redwoods_compass_questions_v0.6.json`  
 **Change:** `Infrastructure` → Detailed description of changes:

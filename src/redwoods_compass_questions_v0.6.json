@@ -374,7 +374,31 @@
       },
       {
         "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
-        "Question": "Does the design system fully support the primary code language(s) used by product teams?",
+        "Question": "Are you able to use the design system in all applications in your company?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Is there a defined tech stack and/or set of frameworks?",
+        "Question": "Is the design system compatible with the primary languages and frameworks teams use?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Distribution & Version Control",
+        "Question": "Is the design system isolated in its own repo or colocated with the product?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Distribution & Version Control",
+        "Question": "Do you use a tool like a package manager to distribute the design system?",
         "Description": "",
         "Infotip": "",
         "Answer": "",
@@ -430,6 +454,30 @@
         "Subcategory": "Are all teams on the same design tooling?",
         "Question": "Are design resources distributed through the same tool?",
         "Description": "Some organizations have specific places where logos, and images live that is sometimes separate from the libraries where components live, for example",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Quality & Testing",
+        "Question": "Are there quality standards for your application for things like performance and accessibility?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Quality & Testing",
+        "Question": "Are there defined quality guidelines that your application is evaluated by?",
+        "Description": "",
+        "Infotip": "",
+        "Answer": "",
+        "weight": 1
+      },
+      {
+        "Subcategory": "Quality & Testing",
+        "Question": "For QA testing, do teams rely on human testing, automated testing, or a combination of the two?",
+        "Description": "",
         "Infotip": "",
         "Answer": "",
         "weight": 1
